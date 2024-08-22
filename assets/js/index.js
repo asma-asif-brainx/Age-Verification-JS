@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert("Invalid Year. You have entered future date.");
                 status=false;
             }
+            if(year < 1450){
+                alert("Invalid year. Please enter year within range 1450 and present year");
+                status = false;
+            }
             if (month === 2) {
                 const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
                 if (isLeapYear && day > 29) {

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Age Verification</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="assets/js/index.js"></script>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body class="main">
-        <div class="main-container">
-            <form id="age-form">
-                <label for="day">Day</label>
-                <input id="day" type="number" name="day" placeholder="Enter day" required>
-                <hr>
-                <label for="month">Month</label>
-                <input id="month" type="number" name="month" placeholder="Enter month" required>
-                <hr>
-                <label for="year">Year</label>
-                <input id="year" type="number" name="year" placeholder="Enter year" required>
-                <hr>
-                <button type="button" id="btn-go">Go</button>
-            </form> 
-        </div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/index.js" defer></script>
+</head>
+<body class="main">
+    <div class="main-container">
+        <form id="age-form">
+            <label for="day">Day</label>
+            <input id="day" type="number" name="day" placeholder="Enter day" min="1" max="31" required>
+            <hr>
+            <label for="month">Month</label>
+            <input id="month" type="number" name="month" placeholder="Enter month" min="1" max="12" required>
+            <hr>
+            <label for="year">Year</label>
+            <input id="year" type="number" name="year" placeholder="Enter year" min="1450" max="9999" required>
+            <hr>
+            <button type="button" id="btn-go">Go</button>
+        </form>
+    </div>
+</body>
 </html>
